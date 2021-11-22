@@ -6,39 +6,35 @@
   <meta name="apple-mobile-web-app-capable" content="yes"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>index</title>
-  <style>
-    video{
-      height: 56.25vw;
-    }
-    #url{
-      width: 90%;
-    }
-  </style>
-  <script type="module" crossorigin src="/vh-player-demo/assets/index.5af026ba.js"></script>
-    <link rel="modulepreload" href="/vh-player-demo/assets/vendor.bf38ea8d.js">
+  
+  <script type="module" crossorigin src="/vh-player-demo/assets/index.ea33ce3e.js"></script>
+    <link rel="modulepreload" href="/vh-player-demo/assets/vendor.08b56991.js">
+    <link rel="stylesheet" href="/vh-player-demo/assets/index.8cc48322.css">
   </head>
 <body>
-<section>
-</section>
+<div>
+  <input type="text" id="url" placeholder="input watch url">
+</div>
 
 <section>
-  <div id="vh-player"></div>
-  <h3>vh player test</h3>
-  <div>
-    <input type="text" id="url" placeholder="input watch url" value="https://t-tehlsvodhls02.vhallyun.com/vhallyun/vhallcoop/02290ce8c85e49463092cb860d455983/58faa1f6/02290ce8c85e49463092cb860d455983.m3u8">
+  <div id="vh-player" class="player">
+    <div class="control">
+      <button id="btn-toggle-fullscreen">toggle fullscreen</button>
+      <button id="btn-switch">change line</button>
+      <button id="btn-quality">change quality</button>
+    </div>
   </div>
+  <h3>vh player test</h3>
   <div>
     <button id="btn-init-player">init player</button>
     <button id="btn-toggle-play">toggle play</button>
-    <button id="btn-toggle-fullscreen">toggle fullscreen</button>
-    <button id="btn-switch">change line</button>
     <button id="btn-seek">custom seek</button>
-    <button id="btn-show-stats">show stats</button>
+    <button id="btn-destroy">destroy</button>
   </div>
 </section>
 
 <section>
-  <div id="flv-player"></div>
+  <div id="flv-player" class="player"></div>
   <h3>flv player test</h3>
   <div>
     <button id="btn-flv-init">init flv player</button>
@@ -48,14 +44,27 @@
 </section>
 
 <section>
-  <div id="hls-player"></div>
+  <div id="hls-player" class="player"></div>
   <h3>hls player test</h3>
   <div>
     <button id="btn-hls-init">init hls player</button>
     <button id="btn-hls-toggle-play">toggle play</button>
     <button id="btn-hls-switch">change line</button>
+    <button id="btn-hls-seek">custom seek</button>
   </div>
 </section>
+
+<section>
+  <div id="hls-lite-player" class="player"></div>
+  <h3>hls lite player test</h3>
+  <div>
+    <button id="btn-hlslite-init">init hls lite player</button>
+    <button id="btn-hlslite-toggle-play">toggle play</button>
+    <button id="btn-hlslite-switch">change line</button>
+  </div>
+</section>
+
+<section id="log"></section>
 
 
 </body>
