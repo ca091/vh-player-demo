@@ -7,35 +7,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>index</title>
   
-  <script type="module" crossorigin src="/vh-player-demo/assets/index.ea33ce3e.js"></script>
-    <link rel="modulepreload" href="/vh-player-demo/assets/vendor.08b56991.js">
-    <link rel="stylesheet" href="/vh-player-demo/assets/index.8cc48322.css">
+  <script type="module" crossorigin src="/vh-player-demo/assets/index.e70a6e14.js"></script>
+    <link rel="modulepreload" href="/vh-player-demo/assets/vendor.cf9c14c5.js">
+    <link rel="stylesheet" href="/vh-player-demo/assets/index.b21e1e89.css">
   </head>
 <body>
-<div>
-  <input type="text" id="url" placeholder="input watch url">
-</div>
-
 <section>
+  <h3>vh player test</h3>
   <div id="vh-player" class="player">
-    <div class="control">
-      <button id="btn-toggle-fullscreen">toggle fullscreen</button>
-      <button id="btn-switch">change line</button>
-      <button id="btn-quality">change quality</button>
+    <div class="mask">
+      <p>宽带: <span id="bandwidth">0</span>MB / s</p>
+      <p>线路: <span id="cdn"></span></p>
+      <p>清晰度: <span id="quality"></span></p>
     </div>
   </div>
-  <h3>vh player test</h3>
   <div>
     <button id="btn-init-player">init player</button>
     <button id="btn-toggle-play">toggle play</button>
     <button id="btn-seek">custom seek</button>
     <button id="btn-destroy">destroy</button>
+    <button id="btn-mask-info">mask info</button>
   </div>
 </section>
 
 <section>
-  <div id="flv-player" class="player"></div>
   <h3>flv player test</h3>
+  <div id="flv-player" class="player"></div>
   <div>
     <button id="btn-flv-init">init flv player</button>
     <button id="btn-flv-toggle-play">toggle play</button>
@@ -44,8 +41,8 @@
 </section>
 
 <section>
-  <div id="hls-player" class="player"></div>
   <h3>hls player test</h3>
+  <div id="hls-player" class="player"></div>
   <div>
     <button id="btn-hls-init">init hls player</button>
     <button id="btn-hls-toggle-play">toggle play</button>
@@ -55,8 +52,8 @@
 </section>
 
 <section>
-  <div id="hls-lite-player" class="player"></div>
   <h3>hls lite player test</h3>
+  <div id="hls-lite-player" class="player"></div>
   <div>
     <button id="btn-hlslite-init">init hls lite player</button>
     <button id="btn-hlslite-toggle-play">toggle play</button>
