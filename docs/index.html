@@ -5,28 +5,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
   <meta name="apple-mobile-web-app-capable" content="yes"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>index</title>
+  <title>vh player</title>
   
-  <script type="module" crossorigin src="/vh-player-demo/assets/index.9a849855.js"></script>
-    <link rel="modulepreload" href="/vh-player-demo/assets/vendor.cf9c14c5.js">
-    <link rel="stylesheet" href="/vh-player-demo/assets/index.b21e1e89.css">
+  <script type="module" crossorigin src="/vh-player-demo/assets/index.88976269.js"></script>
+    <link rel="modulepreload" href="/vh-player-demo/assets/vendor.541e15a3.js">
+    <link rel="stylesheet" href="/vh-player-demo/assets/index.be5e7790.css">
   </head>
 <body>
 <section>
   <h3>vh player test</h3>
   <div id="vh-player" class="player">
-    <div class="mask">
+    <div class="mask mask-info">
       <p>宽带: <span id="bandwidth">0</span>MB / s</p>
       <p>线路: <span id="cdn"></span></p>
       <p>清晰度: <span id="quality"></span></p>
+      <p>播放时长: <span id="playedTime"></span></p>
+    </div>
+    <div class="mask mask-capture">
+      <img alt="video capture image">
     </div>
   </div>
   <div>
     <button id="btn-init-player">init player</button>
-    <button id="btn-toggle-play">toggle play</button>
     <button id="btn-seek">custom seek</button>
     <button id="btn-destroy">destroy</button>
     <button id="btn-mask-info">mask info</button>
+    <button id="btn-capture">video capture</button>
+    <button id="btn-add-barrage">add barrage</button>
+    <button id="btn-clear-barrage">clear barrage</button>
   </div>
 </section>
 
