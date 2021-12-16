@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>vh player</title>
+  
+  <script type="module" crossorigin src="/vh-player-demo/pro/assets/index.0719e938.js"></script>
+    <link rel="modulepreload" href="/vh-player-demo/pro/assets/vendor.541e15a3.js">
+    <link rel="stylesheet" href="/vh-player-demo/pro/assets/index.db3aaaad.css">
+  </head>
+<body>
+<section>
+  <h3>vh player test</h3>
+  <div id="vh-player" class="player">
+    <div class="mask mask-info">
+      <p>宽带: <span id="bandwidth">0</span>KB / s</p>
+      <p>线路: <span id="cdn"></span></p>
+      <p>清晰度: <span id="quality"></span></p>
+      <p>缓存时长: <span id="bufferedTime"></span></p>
+      <p>播放时长: <span id="playedTime"></span></p>
+      <p>可快进时长: <span id="canSeekTime"></span></p>
+    </div>
+    <div class="mask mask-capture">
+      <img alt="video capture image">
+    </div>
+  </div>
+  <div>
+    <button id="btn-init-player">init player</button>
+    <button id="btn-seek">custom seek</button>
+    <button id="btn-destroy">destroy</button>
+    <button id="btn-mask-info">mask info</button>
+    <button id="btn-capture">video capture</button>
+    <button id="btn-add-barrage">add barrage</button>
+    <button id="btn-clear-barrage">clear barrage</button>
+  </div>
+</section>
+
+<section>
+  <h3>flv player test</h3>
+  <div id="flv-player" class="player"></div>
+  <div>
+    <button id="btn-flv-init">init flv player</button>
+    <button id="btn-flv-toggle-play">toggle play</button>
+    <button id="btn-flv-switch">change line</button>
+  </div>
+</section>
+
+<section>
+  <h3>hls player test</h3>
+  <div id="hls-player" class="player"></div>
+  <div>
+    <button id="btn-hls-init">init hls player</button>
+    <button id="btn-hls-toggle-play">toggle play</button>
+    <button id="btn-hls-switch">change line</button>
+    <button id="btn-hls-seek">custom seek</button>
+  </div>
+</section>
+
+<section>
+  <h3>hls lite player test</h3>
+  <div id="hls-lite-player" class="player"></div>
+  <div>
+    <button id="btn-hlslite-init">init hls lite player</button>
+    <button id="btn-hlslite-toggle-play">toggle play</button>
+    <button id="btn-hlslite-switch">change line</button>
+  </div>
+</section>
+
+<section id="log"></section>
+
+
+</body>
+</html>
