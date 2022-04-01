@@ -8,3 +8,7 @@ player demo
 > open [vue](https://erluzi.github.io/vh-player-demo/vue3/)
 
 **可追加参数控制 => ?type=vod&appId=xxx&roomId=xxx&recordId=xxx&playerType=auto**
+
+## docs
+
+- **docsify serve docs**
