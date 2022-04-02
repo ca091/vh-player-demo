@@ -38,4 +38,4 @@
 - TOUCH_PLAY = 'touchPlay', // 触发播放, 用于日志上报
 
 - HLS_ERROR = 'hlsError', // HLS错误
-- FLV_ERROR = 'flvError' // HLS错误
+- FLV_ERROR = 'flvError' // FLV错误

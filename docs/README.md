@@ -2,7 +2,7 @@
 
 > 创建实例
 
-```javascript
+```typescript
 let options = {
   videoNode: 'vh-player',
   type: 'vod',
@@ -76,4 +76,8 @@ let options = {
     }
   }
 }
+
+let success = (_player: VhPlayer) => {console.log(_player)}
+let fail = (err: any) => {console.error(err)}
+VhPlayer.createInstance(options, success, fail)
 ```
