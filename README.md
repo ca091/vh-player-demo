@@ -9,6 +9,6 @@ player demo
 
 **可追加参数控制 => ?type=vod&appId=xxx&roomId=xxx&recordId=xxx&playerType=auto**
 
-## docs
+## [docs](https://erluzi.github.io/vh-player-demo/#/)
 
-- **docsify serve docs**
+- local server **docsify serve docs**
