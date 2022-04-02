@@ -109,6 +109,8 @@ export interface PureOptions {
   muted?: boolean
   poster?: string
   debug?: boolean | ILogger
+  flvOptions?: Partial<flvjs.Config>
+  hlsOptions?: Partial<HlsConfig>
 }
 
 // VhPlayer 参数

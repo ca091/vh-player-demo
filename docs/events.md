@@ -5,6 +5,7 @@
 - Ended = 'ended',
 - Loaded = 'loadeddata',
 - Play = 'play',
+- Canplay = 'canplay',
 - Pause = 'pause',
 
 - Ratechange = 'ratechange',
@@ -29,10 +30,12 @@
 - CLEAR_BARRAGE = 'clearBarrage', // 清空弹幕
 
 - SCHEDULER_COMPLETE = 'scheduleComplete',
-- PLAYBACKRATE_LIST_CHANGED = 'playbackratelistchange',
 
 - PULL_STREAM_FAILED = 'PULL_STREAM_FAILED', // 拉流失败 - 执行重连
 - LINE_CHANGE = 'lineChange', // 执行切线
 - LINE_CHANGED = 'lineChanged', // 切线完成，包含切换清晰度
 - LIVE_TIMESHIFT = 'liveTimeShift', // 直播时移事件
 - TOUCH_PLAY = 'touchPlay', // 触发播放, 用于日志上报
+
+- HLS_ERROR = 'hlsError', // HLS错误
+- FLV_ERROR = 'flvError' // HLS错误
